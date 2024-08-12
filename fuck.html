@@ -1,0 +1,18 @@
+<br>
+<input placeholder="how may carbo emissios did you let off" id="carbo"></input>
+<br>    
+<p id="emissio">emissio payed off: </p>
+<br></br>
+<button onclick="payThatBitchOff()">
+    pay off carbo emissios
+</button>
+<script>
+    let paid = 0;
+    function payThatBitchOff() {
+        let val = document.getElementById('carbo').value;
+            alert("you payed off " + parseInt(val) + " carbo emissios");
+            paid = paid + parseInt(val);
+            document.getElementById('emissio').innerText = "emissio payed off: " + paid;
+        
+    }
+</script>
